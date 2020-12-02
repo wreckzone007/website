@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap');
+ 
+html {
+  scroll-behavior: smooth;
+  
+}
+head link{
+  border-radius: 100%;
+}
+body {
+  
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  background-image: url(img/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  border: 5px;
+}
+
+
+#navbar {
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+
+#navbar a {
+  /* float: center; */
+  display: inline;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  align-content: center;
+  
+  
+}
+
+#navbar #profile{
+  font-weight: 1000;
+}
+#navbar img{
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  top: 0px;
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+}
+
+#navbar img:hover{
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#navbar a:hover {
+  font-weight: 900;
+  /* font-style: bold; */
+  color: black;
+  border-bottom: 1px solid #888e93;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: all 0.4s linear;
+
+}
+
+#navbar img:hover{
+  -webkit-transform: rotate(360deg);
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.4s linear;
+  z-index: 100;
+  opacity: .8;
+  
+  
+}
+
+.sticky + .content {
+  padding: 60px;
+  
+}
+
+.section{
+  height: fit-content;
+  width: 100%;
+  /* text-align: center; */
+  justify-content: center;
+  position: relative;
+  
+}
+
+
+
+.container{
+  padding: 25px 100px;
+  max-width: 1500px;
+ 
+}
+
+#aboutMe{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 600px auto;
+  grid-gap: 0;
+  
+  border: 100px;
+  color: black;
+  
+}
+#aboutMe h3{
+  position: relative;
+  left: -200px;
+  grid-area: 1/1/2/2;
+  font-size: 4em;
+  width: 500px;
+  border-bottom: 5px solid #888e93;
+  font-family: 'Recursive', sans-serif;
+}
+
+#aboutMe p{
+  text-align: center;
+  margin-left: -300px;
+  grid-area: 2/1/3/2;
+}
+#aboutMe img{
+  grid-area: 1/2/ span 4/4;
+  height: 39em;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  box-shadow: black;
+
+}
+.socMeds{
+  grid-area: 3/1/4/2;
+  position: relative;
+  left: -132px;
+  grid-template-columns: auto auto auto;
+}
+.socMeds i{
+  padding: 0px 50px;
+  color: #313131;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 175ms;
+  
+}
+.socMeds a{
+  height: 100px;
+  width: 100px;
+  text-decoration: none;
+}
+
+.socMeds .linkedin:hover{
+  color: #0e76a8;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 175ms;
+}
+.socMeds .facebook:hover{
+  color: #3b5998;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 175ms;
+}
+.socMeds .github:hover{
+  color: black;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 175ms;
+}
+
+#aboutMe .text{
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  left: 100px;
+  width: 500px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.sectionContent{
+  width: 80%;
+  align-self:center;
+  display: grid;
+  grid-template-rows: auto auto;
+  margin: 0px auto;
+  z-index: 100;
+  height: fit-content;
+}
+
+#educParty{
+  position: absolute;
+  left: 200px;
+  z-index: 3;
+  height: fit-content;
+}
+.sectionTitle{
+  grid-row: 1;
+   border-bottom: 2px solid #888e93;
+  font-family: 'Recursive', sans-serif;
+  width: 500px;
+  font-size: 3em;
+  margin: 0px auto;
+  margin-bottom: 70px;
+  
+  
+}
+#education{
+  padding-top: 69px;
+ background-color: white;
+ /* background-color: rgba(185, , 242, 0.75); */
+  /* position: relative; */
+  color: black;
+  /* min-height: fit-content; */
+  height: auto;
+}
+
+
+#particles-js{
+  z-index: -10;
+  /* height: fit-content; */
+  height: auto;
+}
+
+.sectionContainer{
+  grid-row: 2;
+  margin: 0 auto;
+  height: fit-content;
+}
+.school{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 870px;
+  align-content: left;
+  grid-gap: 80px;
+  margin-bottom: 75px  ;
+  float: left;  
+  justify-content: space-between;
+
+}
+.school img{
+  height: 23em;
+  position: relative;
+  left: 80px;
+  bottom: 50px;
+  padding-right: 30px;
+  
+}
+
+.section .sectionTitle{
+  grid-row: 1;
+  text-align: center;
+  text-transform: capitalize;
+  
+}
+
+.schoolInfo{
+  align-items: left;
+  min-width: 870px;
+  
+}
+.schoolInfo span,p{
+  display: block;
+}
+
+.schoolInfo #schoolName{
+  font-family: 'Recursive', sans-serif;
+  font-weight: 700;
+  padding-bottom: 20px;
+  font-size: 4em;
+}
+
+.schoolInfo #course{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.schoolInfo #schoolYear,.awards{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+
+#organizations{
+  /* background-color: #f5f5f2; */
+  background: url(img/orgBg.png) no-repeat center fixed;
+  background-size: cover;
+  padding-top: 60px;
+
+}
+
+#organizations img{
+  height: 40em;
+}
+#skillsSection{
+  margin-bottom: 30px;
+}
+
+.org{
+  
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50em 1fr;
+    align-content: center;
+    grid-gap: 0px;
+    margin-bottom: 75px  ;  
+  
+
+}
+.orgInfo{
+  display: block;
+  grid-area: 1/2/1/3;
+  margin: auto 0;
+  width: 820px;
+}
+
+.orgInfo span, p{
+  display: block;
+}
+.orgInfo #orgName{
+  font-family: 'Recursive', sans-serif;
+  font-weight: 700;
+  padding-bottom: 20px;
+  font-size: 4em;
+}
+
+.orgInfo #position{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.orgInfo #schoolYear{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+.orgInfo #description{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+#skills, #contactMe{
+  background-color: #f5f5f2;
+  padding-top: 40px;
+  
+  padding-bottom: 100px;
+}
+
+.titles{
+  font-family: 'Recursive', sans-serif;
+  font-weight: 700;
+  padding-bottom: 5px;
+  font-size: 2em;
+}
+
+#skills #description{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+.skillsGrid{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 500px 500px;
+  width: 100%;
+  grid-gap: 50px;;
+}
+.technicalSkills{
+  grid-column: 1;
+}
+.hobbies{
+  grid-column: 2;
+
+}
+.hobby{
+  width: 100px;
+  text-align: center;
+  
+}
+
+.hobbyGroup{
+     display: grid;
+  padding-left: 50px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+}
+.hobbiesIcons{
+  border: 5px;
+   justify-content: center; 
+   
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  text-align: center;
+  align-content: center;
+  border-radius: 100%;
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+
+  
+}
+
+.hobbiesIcons:hover{
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.hobbiesIcons i{
+  left: 50%;
+  padding-top: 10px;
+  margin: 50px auto;
+  display: inline-block;
+  border: 5px;
+ }
+
+ #defaultHobby{
+  color:#696e6e;  
+  border-color: #696e6e;
+ }
+#teamwork{
+  color:#58a695;  
+  border-color: #58a695
+}
+#gaming{
+  color: #b9a066;
+  border-color: #b9a066;
+}
+#travel{
+  color: #bf6551;
+  border-color: #bf6551;
+}
+
+#sports{
+  color: #af3026;
+  border-color: #af3026;
+  align-content: center;
+  
+}
+ .hobbiesName{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  margin: 0 auto;
+  
+ }
+
+ #projects{
+  /* background-color: #f5f5f2; */
+  background: url(img/TRY.png) no-repeat center fixed;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+
+#projects .description{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 1.5em;
+}
+.projectGrid{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 50px;;
+
+}
+
+.project{
+  background-color: rgba(245, 245, 242, 0.75);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+  boxbox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project img{
+   width: 350px;
+   align-content: center;
+   margin: 0 auto;
+}
+
+.project img:hover{
+  transform: scale(1.1);
+  transition: transform .5s ease;
+  
+}
+
+#projectName{
+  font-family: 'Recursive', sans-serif;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-top: 10px;;
+  font-size: 2em;
+  display: block;
+}
+
+#contactMe{
+  text-align: center;
+}
+
+#contbtn{
+  height: 50px;
+}
+
+#contactMe .intro{
+  margin-top: -50px;
+  font-size: 2em;
+}
+
+button{
+  border-radius: 50%;
+}
+#contbtn i{
+  margin: 0 auto;
+  margin-top: -37px;
+}
+
+#emailBtn{
+  color: black;
+  font-family: 'Recursive', sans-serif;
+   font-weight: 700;
+   font-size: 1.5em;
+   
+}
+
+#emailBtn p{
+  color: black;
+}
